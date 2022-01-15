@@ -6,7 +6,8 @@ from PIL import Image
 qr = qrcode.QRCode(
     version=1, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=50, border=2)
 
-qr.add_data("You earned 10 points!")
+qr.add_data(
+    "You have just scanned the Salvation Army code, and you earned 10 points!")
 
 qr.make(fit=True)
 img = qr.make_image(fill_color='green', back_color='white')
@@ -21,7 +22,7 @@ img.save('ecodes1.png')
 qr = qrcode.QRCode(
     version=1, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=50, border=2)
 
-qr.add_data("You earned 20 points!")
+qr.add_data("You have just scanned the Tentree code, and you earned 20 points!")
 
 qr.make(fit=True)
 img = qr.make_image(fill_color='green', back_color='white')
@@ -36,7 +37,8 @@ img.save('ecodes2.png')
 qr = qrcode.QRCode(
     version=1, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=50, border=2)
 
-qr.add_data("You earned 30 points!")
+qr.add_data(
+    "You have just scanned the GO Transit code, and you earned 30 points!")
 
 qr.make(fit=True)
 img = qr.make_image(fill_color='green', back_color='white')
@@ -51,7 +53,8 @@ img.save('ecodes3.png')
 qr = qrcode.QRCode(
     version=1, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=50, border=2)
 
-qr.add_data("You earned 40 points!")
+qr.add_data(
+    "You have just scanned the Zero-Waste Bulk code, and you earned 40 points!")
 
 qr.make(fit=True)
 img = qr.make_image(fill_color='green', back_color='white')
@@ -65,7 +68,8 @@ img.save('ecodes4.png')
 qr = qrcode.QRCode(
     version=1, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=50, border=2)
 
-qr.add_data("You earned 50 points!")
+qr.add_data(
+    "You have just scanned the B.Y.O. Cup/Straw code at Starbucks, and you earned 50 points!")
 
 qr.make(fit=True)
 img = qr.make_image(fill_color='green', back_color='white')
